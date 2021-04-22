@@ -1,4 +1,9 @@
 /* Colors + Fonts */
+:root {
+    --main-text-color: #999999;
+    --main-text-bold: #CCCCCC;
+}
+
 body {
     margin: 0;
     font-family: 'open-sans', sans-serif;
@@ -26,8 +31,9 @@ body {
 
     /* color: #6B6E70; */
 
-    color: #999999;
+    color: var(--main-text-color);
     font-size: 120%;
+    font-family: 'roboto', sans-serif;
 }
 
 h1 {
@@ -43,9 +49,9 @@ h2, h3 {
     padding: 0;
 }
 
-p {
+/* p {
     font-family: 'roboto', sans-serif;
-}
+} */
 
 a {
     text-decoration: none;
@@ -102,6 +108,26 @@ nav {
     border-style: solid;
     border-color: white;
     padding: 8px
+}
+
+.title-text h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.body-text b {
+    color: var(--main-text-bold); 
+}
+
+.body-text ul {
+    display: inline-block;
+    /* float: left; */
+}
+
+.body-text li {
+    color: var(--main-text-color);
+    display: list-item;
+    list-style-type: disc;
 }
 
 
