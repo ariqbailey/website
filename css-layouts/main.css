@@ -1,0 +1,62 @@
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #999;
+    color: white;
+    padding: 15px 15px 0px 15px;
+}
+
+h1 {
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+    display: inline;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 0 0 15px;
+    display: inline;
+    justify-content: right;
+}
+
+/*nav with ul child with li child*/
+nav ul li {
+    display: inline-block; 
+    list-style-type: none;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.row:after {
+    clear: both;
+}
+
+.col {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    /* padding: 20px; */
+    padding: 10px .5%;
+    margin: .5%;
+    width: 31%;
+}
+
+button {
+    background: grey;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}

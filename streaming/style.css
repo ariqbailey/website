@@ -1,0 +1,107 @@
+/* CSS general */
+:root {
+    --light: white;
+    --dark: black;
+    --radius: 5%;
+}
+body {
+    background: var(--dark);
+    min-height: 100%;
+}
+
+html {
+    /* height: 100%; */
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* Rest */
+
+.wrapper {
+    display: grid;
+    /* padding: 2%; */
+    grid-template: 1fr;
+    align-items: center;
+}
+
+.boxes {
+    display: grid;
+    /* grid-gap: 4rem; */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-auto-rows: 230px;
+    /* object-fit: cover; */
+}
+
+.ultra-wrapper {
+    display: grid;
+    padding: 7%;
+    /* background: url('assets/youtube-logo-9.png'); */
+}
+
+.ultra-wrapper a {
+    overflow: hidden;
+    /* overflow-y: auto; */
+    background: #FFF;
+    border-radius: var(--radius);
+    display: grid;
+    /* padding: 2%; */
+}
+
+.box-wrapper {
+    align-items: center;
+    align-self: center;
+}
+
+.box {
+    align-items: center;
+    align-self: center;
+    margin: 5%;
+}
+
+.five {
+    margin: 0;
+}
+
+/* .ultra-wrapper:hover {
+    padding: 5%;
+} */
+
+a:hover {
+    background: grey;
+}
+
+/* Media Queries */
+@media(min-width: 1800px) {
+    .boxes {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        /* grid-auto-rows: minmax(700px, auto-fit); */
+        grid-auto-rows: 33%;
+    }
+}
+
+@media(max-width: 1800px) {
+    .boxes {
+        grid-auto-columns: repeat(auto-fit, minmax(600px, 1fr 1fr 1fr));
+        /* grid-auto-rows: 375px; */
+    }
+}
+
+@media(max-width: 1200px) {
+    .boxes {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        /* grid-auto-rows: minmax(250px, auto-fit); */
+        grid-auto-rows: minmax(250px, 1fr);
+    }
+}
+
+@media(max-width: 800px) {
+    .boxes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(125px, auto-fit);
+    }
+}
+

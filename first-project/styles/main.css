@@ -1,0 +1,33 @@
+body {
+    background:#999;
+    font-family: arial;
+}
+
+h1, h2, li {
+    color: #333;
+}
+
+a {
+    color: green;
+}
+
+p {
+    background: #666;
+    color: white;
+    padding: 10px 0px;
+    /* all | top bottom | top right bottom left (clockwise) */
+}
+
+/* cascading style sheets (later has prescedence) */
+p {
+    background: red;
+}
+
+.secondary {
+    background: none;
+    color: #777;
+}
+
+#special {
+    background:blue;
+}
