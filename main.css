@@ -5,13 +5,36 @@ body {
     /* background-color: #fdf800; */
     /* color: blue; */
     /* background-color: #222629; */
-    background-color: #242624;
-    color: #6B6E70;
+    /* background-color: #242624; */
+
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,13,14,1) 100%); */
+
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%); */
+
+    /* background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(18,19,19,1) 100%); */
+
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
+
+    /* background: rgb(114,61,140);
+    background: radial-gradient(circle, rgba(114,61,140,1) 0%, rgba(2,0,36,1) 100%); */
+
+    /* background: #424B54; */
+
+    /* color: #6B6E70; */
+
+    color: #999999;
     font-size: 120%;
 }
 
 h1 {
-    color: #61892F;
+    /* color: #61892F; */
+    /* color: yellow; */
+    color: #F9C80E;
+    font-size: 120%;
 }
 
 h2, h3 {
@@ -44,7 +67,7 @@ ul li {
 }
 
 a:hover {
-    color: yellow;
+    color: #F9C80E;
 }
 
 /* Nav */
@@ -52,7 +75,7 @@ nav {
     margin: 1% 1%;
     /* background: #6B6E70; */
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 8fr 2fr;
     /* justify-content: center;
     align-content: center;
     text-align: center;
@@ -103,6 +126,18 @@ nav {
 
 /* About */
 
+/* .mail {
+    text-align: left;
+}
+
+.mail a {
+    display: inline-block;
+}
+
+.mail p {
+    float: left;
+} */
+
 .item-1 {
     display: grid;
     /* grid-template-rows: 200px; */
@@ -115,11 +150,11 @@ nav {
 
 .photo {
     background-size: contain;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
 }
 
 .bio {
-    grid-column: 3 / 12;
+    grid-column: 4 / 12;
 }
 
 .internal-item img{
@@ -132,6 +167,8 @@ nav {
 
 .internal-text {
     display: grid;
+    /* justify-items: center; */
+    align-items: center;
     grid-template-columns: 3fr 9fr;
     grid-gap: 0 20px;
 }
@@ -139,14 +176,15 @@ nav {
 .title-text {
     display: flexbox;
     text-align: right;
-    text-justify: top;
+    /* text-justify: center;
+    align-items: center; */
 }
 
 .body-text {
     display: flexbox;
     text-align: left;
-    text-justify: top;
-    vertical-align: top;
+    /* text-justify: top;
+    vertical-align: top; */
 }
 
 /* Footer */
