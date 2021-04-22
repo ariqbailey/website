@@ -80,17 +80,23 @@ a:hover {
 
 /* Nav */
 nav {
-    /* position: relative;
-    transition: all 0.3s ease */
-    margin: 1% 1%;
-    /* background: #6B6E70; */
+    /* margin: 1% 1%; */
     display: grid;
     grid-template-columns: 1fr 8fr 2fr;
     /* justify-content: center;
     align-content: center;
     text-align: center;
     text-justify: center; */
+
+    /* Allow the navbar to move with the page */
+    border-bottom: 1px solid white; 
+    background: #08001A;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
+
 
 .nav_bar {
     display: flex;
@@ -117,6 +123,7 @@ nav {
 /* Everything else */
 
 .grid-container {
+    padding: 70px 0 0 0;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
