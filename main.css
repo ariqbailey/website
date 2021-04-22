@@ -7,13 +7,14 @@ body {
     /* background-color: #222629; */
     background-color: #242624;
     color: #6B6E70;
+    font-size: 120%;
 }
 
 h1 {
     color: #61892F;
 }
 
-h2 {
+h2, h3 {
     color: white;
     margin: 0;
     padding: 0;
