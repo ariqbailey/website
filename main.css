@@ -2,6 +2,7 @@
 :root {
     --main-text-color: #999999;
     --main-text-bold: #CCCCCC;
+    --main-text-accent: #F9C80E;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 h1 {
     /* color: #61892F; */
     /* color: yellow; */
-    color: #F9C80E;
+    color: var(--main-text-accent);
     font-size: 120%;
 }
 
@@ -68,16 +69,19 @@ ul {
 }
 
 ul li {
+    /* justify-content: center; */
     display:inline-block;
     list-style-type: none;
 }
 
 a:hover {
-    color: #F9C80E;
+    color: var(--main-text-accent);
 }
 
 /* Nav */
 nav {
+    /* position: relative;
+    transition: all 0.3s ease */
     margin: 1% 1%;
     /* background: #6B6E70; */
     display: grid;
@@ -110,27 +114,6 @@ nav {
     padding: 8px
 }
 
-.title-text h5 {
-    margin: 0;
-    padding: 0;
-}
-
-.body-text b {
-    color: var(--main-text-bold); 
-}
-
-.body-text ul {
-    display: inline-block;
-    /* float: left; */
-}
-
-.body-text li {
-    color: var(--main-text-color);
-    display: list-item;
-    list-style-type: disc;
-}
-
-
 /* Everything else */
 
 .grid-container {
@@ -138,7 +121,7 @@ nav {
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: start;
-    grid-gap: 20px
+    grid-gap: 20px;
 }
 
 .grid-item {
@@ -155,7 +138,7 @@ nav {
     align-items: center;
     /* place-self: center center; */
     justify-content: space-evenly;
-    grid-gap: 20px
+    grid-gap: 20px;
 }
 
 .photo {
@@ -174,6 +157,10 @@ nav {
 }
 
 /* Skills + CV */
+
+.bio, .body-text {
+    width: 90%;
+}
 
 .internal-text {
     display: grid;
@@ -195,6 +182,31 @@ nav {
     text-align: left;
     /* text-justify: top;
     vertical-align: top; */
+}
+
+.title-text h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.body-text b {
+    color: var(--main-text-bold); 
+}
+
+.body-text ul {
+    display: inline-block;
+    /* float: left; */
+}
+
+.body-text li {
+    color: var(--main-text-color);
+    /* display: list-item; */
+    /* list-style-type: disc; */
+}
+
+/* remove bullet point whitespaces */
+.body-text ul, li {
+    padding: 0;
 }
 
 /* Socials */
