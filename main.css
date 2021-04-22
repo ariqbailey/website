@@ -42,6 +42,10 @@ ul li {
     list-style-type: none;
 }
 
+a:hover {
+    color: yellow;
+}
+
 /* Nav */
 nav {
     margin: 1% 1%;
