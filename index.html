@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Ari Bailey</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=open+sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
         <link rel="stylesheet" href="main.css">
@@ -8,37 +9,62 @@
     <body>
         <header>
             <nav>
-                <div id="home">
+                <div class="nav_bar home">
                     <a href="#home"><h1>Ari Bailey</h1></a>
                 </div>
-                <div id="links">
+                <div class="nav_bar links">
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">CV</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li><a href="#socials">Socials</a></li>
                         <li><a href="streaming">Streaming Launch Page</a></li>
-                        <li><a href="dino-project">Dino Project</a></li>
+                        <!-- <li><a href="dino-project">Dino Project</a></li> -->
                     </ul>
                 </div>
-                <div id="cv">
-                    <a href="assets/Resume College 11_5_20.pdf" download>Download CV</a>
+                <div class="nav_bar cv">
+                    <div id="cv_border">
+                        <a href="assets/Resume College 11_5_20.pdf" download>Download CV</a>
+                    </div>
                 </div>
             </nav>
         </header>
-        <!-- <h1>Nothing to see here. Did you mean to go to the <a
-        href="dino-project">dinosaur project</a>?</h1> -->
         
-        <div id="about">
-            <img src="assets/portrait sep 2019.jpg">
-            <ul>
-                <li><h2>About Me</h2></li>
-                <li><p>I'm a sophomore computer science major studying at the Univeristy
-                    of Maryland.</p></li>
-            </ul>
-            
-        </div>
+        <div class="grid-container">
+            <div id="about">
+                <div class="grid-item item-1">
+                    <div class="internal-item photo">
+                        <img src="assets/portrait sep 2019.jpg">
+                        <!-- Test image -->
+                    </div>
+                    <div class="internal-item bio">
+                        <h2>About Me</h2>
+                        <p>I'm a sophomore computer science major studying at the Univeristy of Maryland.</p>
+                    </div>
+                </div>
+        
+                <div class="grid-item item-2">
+                    <div class="experience">
+                        Test
+                    </div>
+                </div>
+            </div>
 
-        <div class="experience">
-            
+            <div id="cv">
+                <div class="grid-item item-3">
+                    Test
+                </div>
+            </div>
+            <div id="socials">
+                <div class="grid-item item-4">
+                    Test
+                </div>
+            </div>
+            <footer>
+                <div class="grid-item item-5">
+                    Test
+                </div>
+            </footer>
+
         </div>
         
         <!-- <footer>&#169;2020 Ari Bailey</footer> -->
