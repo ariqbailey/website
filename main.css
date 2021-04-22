@@ -50,9 +50,10 @@ h2, h3 {
     padding: 0;
 }
 
-/* p {
+p, li {
+    font-size: 120%;
     font-family: 'roboto', sans-serif;
-} */
+}
 
 a {
     text-decoration: none;
@@ -61,7 +62,7 @@ a {
 
 /* Document rules */
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     width: 80%
@@ -89,7 +90,7 @@ nav {
     text-justify: center; */
 
     /* Allow the navbar to move with the page */
-    border-bottom: 1px solid white; 
+    /* border-bottom: 1px solid white;  */
     /* background: #04001A; */
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
@@ -162,7 +163,8 @@ nav {
 .internal-item img{
     max-height: 400px;
     max-width: 100%;
-    border: 5px solid #6B6E70;
+    /* border: 5px solid #6B6E70; */
+    border: 3px solid white;
 }
 
 /* Skills + CV */
