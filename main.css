@@ -122,7 +122,8 @@ nav {
     display: inline-block;
     border-style: solid;
     border-color: white;
-    padding: 8px
+    padding: 8px;
+    text-align: center;
 }
 
 .cv {
