@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Ari Bailey</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=open+sans">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=open+sans|roboto">
         <link rel="stylesheet" href="main.css">
 
         <!-- favicon -->
@@ -16,30 +16,45 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav_bar home">
-                    <a href="#home"><h1>ari q bailey</h1></a>
-                </div>
-                <div class="nav_bar links">
-                    <ul>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#cv">experience</a></li>
-                        <li><a href="#socials">socials</a></li>
-                        <li><a href="streaming">streaming</a></li>
+        <nav class="navbar navbar-custom sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand ps-2 fs-4">ari q bailey</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="toggleMobileMenu">
+                    <div></div>
+                    <ul class="navbar-nav text-center">
+                        <li class="py-2"><a class="px-5" href="#about">about</a></li>
+                        <li class="py-2"><a class="px-5" href="#skills">skills</a></li>
+                        <li class="py-2"><a class="px-5" href="#cv">experience</a></li>
+                        <li class="py-2"><a class="px-5" href="#socials">socials</a></li>
+                    </ul>
+                    <ul class="navbar-nav text-center download-resume">
+                        <li class="py-2">
+                            <a class="download-resume p-1 border border-3" href="assets/Resume College 2021.pdf" download>
+                                download resume
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                </svg> -->
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="nav_bar cv">
-                    <div id="cv_border">
-                        <a href="assets/Resume College 2021.pdf" download>download resume</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         
         <div class="grid-container">
-            <div id="about">
+            <section id="about">
                 <div class="grid-item item-1">
                     <div class="internal-item photo">
                         <img src="assets/portrait-sep-2019-2.jpg">
@@ -50,9 +65,8 @@
                         <p><a href="mailto:ariqbailey@me.com" id="">ariqbailey@me.com</a> | D.C. area | phone # in resume</p>
                     </div>
                 </div>
-            </div>
-
-            <div id="skills">
+            </section>
+            <section id="skills">
                 <div class="grid-item item-2">
                     <div class="experience">
                         <div class="internal-text cv">
@@ -84,8 +98,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="cv">
+            </section>
+            <section id="cv">
                 <div class="grid-item item-3">
                     <div class="internal-text skills">
                         <div></div>
@@ -136,8 +150,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="socials">
+            </section>
+            <section id="socials">
                 <div class="grid-item item-4">
                     <div class="icons">
                         <div class="icon linkedin">
@@ -168,7 +182,7 @@
                     </div>
                 </div>
                 
-            </div>
+            </section>
             <footer>
                 <div class="grid-item item-5">
                     <h3>&#169; Ari Quartner Bailey 2021 | Coded by hand and hosted on my Raspberry Pi</h3>
@@ -176,6 +190,9 @@
             </footer>
 
         </div>
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
 

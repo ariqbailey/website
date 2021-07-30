@@ -10,7 +10,7 @@
 /* Document rules */
 
 body {
-    margin: 0;
+    /* margin: 0; */
     font-family: 'open-sans', sans-serif;
 
     background: rgb(2,0,36);
@@ -18,7 +18,11 @@ body {
 
     color: var(--main-text-color);
     font-size: 120%;
-    font-family: 'roboto', sans-serif;
+    /* font-family: 'roboto', sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -34,7 +38,7 @@ h2, h3 {
 
 p, li {
     font-size: 120%;
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', 'san-seriff';
 }
 
 a {
@@ -42,75 +46,49 @@ a {
     color: white;
 }
 
-/* Nav */
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 80%
-    /* padding: 0 10%; */
+a:hover {
+    color: var(--main-text-accent) !important;
 }
 
-ul li {
-    /* justify-content: center; */
-    display:inline-block;
+ul {
     list-style-type: none;
 }
 
-a:hover {
+/* offset anchor scroll location */
+section:before {
+    height: 45px;
+    content: "";
+    display:block;
+}
+
+/* Nav */
+
+nav {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
+}
+
+.navbar-custom .navbar-brand {
     color: var(--main-text-accent);
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 1.4fr 6fr 1.8fr;
-
-    /* Allow the navbar to move with the page */
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+.navbar-custom .navbar-nav a {
+    color: white !important;
 }
 
-.nav_bar ul {
-    padding: 0;
+.navbar-custom .navbar-nav a:hover {
+    color: var(--main-text-accent) !important;
 }
 
-
-.links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
+.download-resume {
+    flex-shrink: 0;
 }
 
-.home {
-    justify-content: left;
-    align-content: left;
-    padding: 0 0 0 1em;
-}
-
-#cv_border {
-    display: inline-block;
-    border-style: solid;
-    border-color: white;
-    padding: 8px;
-    text-align: center;
-}
-
-.cv {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 1em 0 0;
-}
 
 /* Everything else */
 
 .grid-container {
-    padding: 90px 0 0 0;
+    /* padding: 90px 0 0 0; */
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
