@@ -1,36 +1,20 @@
 /* Colors + Fonts */
+
 :root {
     --main-text-color: #999999;
     --main-text-bold: #CCCCCC;
     --main-text-accent: #F9C80E;
 }
 
+
+/* Document rules */
+
 body {
     margin: 0;
     font-family: 'open-sans', sans-serif;
-    /* background-color: #fdf800; */
-    /* color: blue; */
-    /* background-color: #222629; */
-    /* background-color: #242624; */
-
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,13,14,1) 100%); */
-
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%); */
-
-    /* background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(18,19,19,1) 100%); */
 
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
-
-    /* background: rgb(114,61,140);
-    background: radial-gradient(circle, rgba(114,61,140,1) 0%, rgba(2,0,36,1) 100%); */
-
-    /* background: #424B54; */
-
-    /* color: #6B6E70; */
 
     color: var(--main-text-color);
     font-size: 120%;
@@ -38,8 +22,6 @@ body {
 }
 
 h1 {
-    /* color: #61892F; */
-    /* color: yellow; */
     color: var(--main-text-accent);
     font-size: 120%;
 }
@@ -60,7 +42,7 @@ a {
     color: white;
 }
 
-/* Document rules */
+/* Nav */
 
 nav ul {
     display: flex;
@@ -79,19 +61,11 @@ a:hover {
     color: var(--main-text-accent);
 }
 
-/* Nav */
 nav {
-    /* margin: 1% 1%; */
     display: grid;
     grid-template-columns: 1.4fr 6fr 1.8fr;
-    /* justify-content: center;
-    align-content: center;
-    text-align: center;
-    text-justify: center; */
 
     /* Allow the navbar to move with the page */
-    /* border-bottom: 1px solid white;  */
-    /* background: #04001A; */
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
     position: fixed;
@@ -221,13 +195,10 @@ nav {
 
 .body-text ul {
     display: inline-block;
-    /* float: left; */
 }
 
 .body-text li {
     color: var(--main-text-color);
-    /* display: list-item; */
-    /* list-style-type: disc; */
 }
 
 /* remove bullet point whitespaces */
@@ -239,7 +210,6 @@ nav {
 
 .icons {
     display: grid;
-    /* align-items: center; */
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 20px;
@@ -252,25 +222,10 @@ nav {
 }
 
 .icon img {
-    /* max-width: 50%; */
-    /* max-height: 100%; */
     width: 100px;
-    /* height: 100px; */
     display: block;
     margin: auto;
 }
-
-/* .icon {
-    background-size: contain;
-    width: 200px;
-
-} */
-
-/* .icon a img {
-    max-height: 200px;
-    max-width: 100%;
-} */
-
 
 /* Footer */
 
