@@ -8,16 +8,20 @@
 
 
 /* Document rules */
+body {
+    font-family: 'roboto', 'open-sans', sans-serif !important;
+}
 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'roboto' !important;
+}
 body {
     /* margin: 0; */
-    font-family: 'open-sans', sans-serif;
-
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,17,1) 100%);
 
     color: var(--main-text-color);
-    font-size: 120%;
+    /* font-size: 120%; */
     /* font-family: 'roboto', sans-serif; */
 }
 
@@ -38,7 +42,7 @@ h2, h3 {
 
 p, li {
     font-size: 120%;
-    font-family: 'roboto', 'san-seriff';
+    /* font-family: 'roboto', sans-serif !important; */
 }
 
 a {
