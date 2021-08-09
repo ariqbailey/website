@@ -31,7 +31,7 @@ html {
 
 h1 {
     color: var(--main-text-accent);
-    font-size: 120%;
+    /* font-size: 120%; */
 }
 
 h2, h3 {
@@ -41,8 +41,8 @@ h2, h3 {
 }
 
 p, li {
-    font-size: 120%;
-    /* font-family: 'roboto', sans-serif !important; */
+    /* font-size: 120%; */
+    font-family: 'roboto' !important;
 }
 
 a {
@@ -91,8 +91,7 @@ nav {
 
 /* Everything else */
 
-.grid-container {
-    /* padding: 90px 0 0 0; */
+/* .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -103,16 +102,19 @@ nav {
 .grid-item {
     padding: 2% 2%;
 
-}
+} */
 
 /* About */
 
-.item-1 {
+.img-max {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* .item-1 {
     display: grid;
-    /* grid-template-rows: 200px; */
     justify-items: center;
     align-items: center;
-    /* place-self: center center; */
     justify-content: space-evenly;
     grid-gap: 20px;
 }
@@ -129,24 +131,22 @@ nav {
 .internal-item img{
     max-height: 400px;
     max-width: 100%;
-    /* border: 5px solid #6B6E70; */
     border: 3px solid white;
 }
 
 .bio h5 {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Skills + CV */
 
-.bio, .body-text {
+/* .bio, .body-text {
     width: 90%;
 }
 
 .internal-text {
     display: grid;
-    /* justify-items: center; */
     align-items: center;
     grid-template-columns: 3fr 9fr;
     grid-gap: 0 20px;
@@ -155,15 +155,11 @@ nav {
 .title-text {
     display: flexbox;
     text-align: right;
-    /* text-justify: center;
-    align-items: center; */
 }
 
 .body-text {
     display: flexbox;
     text-align: left;
-    /* text-justify: top;
-    vertical-align: top; */
 }
 
 .title-text h5 {
@@ -181,7 +177,7 @@ nav {
 
 .body-text li {
     color: var(--main-text-color);
-}
+} */
 
 /* remove bullet point whitespaces */
 .body-text ul, li {
