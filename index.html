@@ -7,7 +7,7 @@
 
         <!-- stylesheets -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> -->
         <link rel="stylesheet" href="main.css">
 
         <!-- favicon -->
@@ -23,44 +23,39 @@
     </head>
     <body>
         <div class="container-fluid">
-            <nav class="navbar navbar-custom sticky-top navbar-expand-lg navbar-dark">
-                    <a href="#" class="navbar-brand fs-3">ari q bailey</a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#toggleMobileMenu"
-                        aria-controls="toggleMobileMenu"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="toggleMobileMenu">
-                        <div></div>
-                        <ul class="navbar-nav text-center">
-                            <li class="py-2"><a class="px-5 fs-5" href="#about">about</a></li>
-                            <li class="py-2"><a class="px-5 fs-5" href="#skills">skills</a></li>
-                            <li class="py-2"><a class="px-5 fs-5" href="#cv">experience</a></li>
-                            <li class="py-2"><a class="px-5 fs-5" href="#socials">socials</a></li>
-                        </ul>
-                        <ul class="navbar-nav text-center download-resume">
-                            <li class="py-2 fs-4">
-                                <a class="download-resume p-1 border border-3" href="assets/Resume College 2021.pdf" download>
-                                    download resume
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                    </svg> -->
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <nav class="navbar navbar-custom sticky-top navbar-expand-lg navbar-dark p-2">
+                <a href="#" class="navbar-brand fs-4">ari q bailey</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="toggleMobileMenu">
+                    <ul></ul>
+                    <ul class="navbar-nav text-center">
+                        <li class="py-2"><a class="px-5 fs-5" href="#about">about</a></li>
+                        <li class="py-2"><a class="px-5 fs-5" href="#skills">skills</a></li>
+                        <li class="py-2"><a class="px-5 fs-5" href="#cv">experience</a></li>
+                        <li class="py-2"><a class="px-5 fs-5" href="#socials">socials</a></li>
+                    </ul>
+                    <ul class="navbar-nav text-center download-resume">
+                        <li class="py-2 fs-5 justify-content-md-center text-center">
+                            <a class="download-resume p-2 border border-3 border-white text-center" href="assets/Resume College 2021.pdf" download>
+                                download resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-            <section id="about" class="row p-3">
-                <div class="col-md-4">
-                    <div class="d-inline-flex align-items-center">
+            <section id="about" class="row py-3">
+                <div class="col-md-4 text-center">
+                    <div class="d-inline-flex">
                         <img src="assets/portrait-sep-2019-2.jpg" class="img-fluid img-max border border-3">
                     </div>
                 </div>
@@ -70,7 +65,7 @@
                     <p class="lead fs-4"><a href="mailto:ariqbailey@me.com" id="">ariqbailey@me.com</a> | D.C. area | phone # in resume</p>
                 </div>
             </section>
-            <section id="skills" class="p-3">
+            <section id="skills" class="py-3">
                 <div class="row py-3 pb-0">
                     <div class="col-md-3"></div>
                     <div class="col-md-9">
@@ -82,7 +77,7 @@
                         <h3 class="text-start text-md-end">computer</h3>
                     </div>
                     <div class="col-md-9 align-self-center">
-                        <p class="fs-4 m-0">
+                        <p class="fs-5 m-0">
                             java, python, c# | vscode, visual studio, eclipse, jupyter
                         </p>
             
@@ -93,7 +88,7 @@
                         <h3 class="text-start text-md-end">relevant classes</h3>
                     </div>
                     <div class="col-md-9 align-self-center">
-                        <p class="fs-4 m-0">object-oriented programming, discrete structures, computer systems, advanced programming languages, algorithms, applied probability and statistics, linear algebra, computer and network security, data science</p>
+                        <p class="fs-5 m-0">object-oriented programming, discrete structures, computer systems, advanced programming languages, algorithms, applied probability and statistics, linear algebra, computer and network security, data science</p>
                     </div>
                 </div>
                 <div class="row py-3">
@@ -101,150 +96,100 @@
                         <h3 class="text-start text-md-end">me</h3>
                     </div>
                     <div class="col-md-9 align-self-center">
-                        <p class="fs-4 m-0">inquisitive; insightful; analytical</p>
+                        <p class="fs-5 m-0">inquisitive; insightful; analytical</p>
                     </div>
                 </div>
             </section>
-        </div>
+            <section id="cv" class="py-3">
+                <div class="row py-3 pb-0">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <h1>experience.</h1>
+                    </div>
+                </div>
+                <div class="row py-3 pt-1">
+                    <div class="col-md-3 align-self-center">
+                        <h3 class="text-start text-md-end">costar group</h3>
+                        <h5 class="text-start text-md-end">june 2021-august 2021</h5>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">wrote <b>C# endpoints</b> for contract upload and download; secured using <b>Json Web Token</b></p>
+                        <p class="fs-5 m-0 py-1">built a <b>responsive UI</b> using <b>Angular/C#</b> to test previous tokenization <b>API</b></p>
+                        <p class="fs-5 m-0 py-1">built an <b>Angular/C#</b> utility using <b>Adobe Sign API</b> to display info for <b>10,000+</b> users</p>
+                        <p class="fs-5 m-0 py-1">created an injectable singeton service to maintain hydration of <b>OAuth</b> access token</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h3 class="text-start text-md-end">jewish federation of princeton mercer bucks</h3>
+                        <h5 class="text-start text-md-end">july 2019-june 2021</h5>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">wrote <b>Java</b> programs to help manage clientele database of <b>800+</b></p>
+                        <p class="fs-5 m-0 py-1">consolidated and pruned data from <b>Blackbaud eTapestry</b> reports</p>
+                        <p class="fs-5 m-0 py-1">implemented <b>Apache POI</b> Library to generate excel spreadsheets</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h3 class="text-start text-md-end">roundview capital</h3>
+                        <h5 class="text-start text-md-end">summers 2016 and 2018</h5>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">built a leveraged buyout calculator application in <b>Java</b> for company clientele</p>
+                        <p class="fs-5 m-0 py-1">compiled stock data from <b>Bloomberg</b>, <b>IEX</b>, and <b>Alpha Vantage</b></p>
+                        <p class="fs-5 m-0 py-1">implemented multivariate regressions in <b>Python</b> using <b>scipy</b> and <b>statsmodels</b> libraries</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h3 class="text-start text-md-end">eagle scout</h3>
+                        <h5 class="text-start text-md-end">august 2019</h5>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1"><b>led team</b> of scouts and adults and <b>cooperated with</b> local government to create and mark trails, sign and bench for Eagle Scout project</p>
+                    </div>
+                </div>
+            </section>
+            <section id="socials" class="container-md">
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://linkedin.com/in/ariqbailey" target="_blank" id="">
+                            <img src="assets/icons/svg/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/ariqbailey" target="_blank" id="">
+                            <img src="assets/icons/svg/github.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.strava.com/athletes/42595636" target="_blank" id="">
+                            <img src="assets/icons/svg/strava.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.goodreads.com/user/show/131060650-ari-bailey" target="_blank" id="">
+                            <img src="assets/icons/svg/goodreads.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/ariqbailey_/" target="_blank" id="">
+                            <img src="assets/icons/svg/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+            </section>
 
-
-        <!-- <div class="grid-container">
-            <section id="about">
-                <div class="grid-item item-1">
-                    <div class="internal-item photo">
-                        <img src="assets/portrait-sep-2019-2.jpg">
-                    </div>
-                    <div class="internal-item bio">
-                        <h2>about me.</h2>
-                        <p>I built my first computer at eleven. Now, I'm a junior studying at the Univeristy of Maryland. Honors computer science student minoring in cybersecurity. Eagle scout, runner and reader.</p>
-                        <p><a href="mailto:ariqbailey@me.com" id="">ariqbailey@me.com</a> | D.C. area | phone # in resume</p>
-                    </div>
-                </div>
-            </section>
-            <section id="skills">
-                <div class="grid-item item-2">
-                    <div class="experience">
-                        <div class="internal-text cv">
-                            <div></div>
-                            <div class="body-text">
-                                <h1>skills.</h1>
-                            </div>
-                            <div class="title-text">
-                                <h3>computer</h3>
-                            </div>
-                            <div class="body-text">
-                                <p>
-                                    java, python, c# | vscode, visual studio, eclipse, jupyter
-                                </p>
-                    
-                            </div>
-                            <div class="title-text">
-                                <h3>relevant classes</h3>
-                            </div>
-                            <div class="body-text">
-                                <p>object-oriented programming, discrete structures, computer systems, advanced programming languages, algorithms, applied probability and statistics, linear algebra, computer and network security, data science</p>
-                            </div>
-                            <div class="title-text">
-                                <h3>me</h3>
-                            </div>
-                            <div class="body-text">
-                                <p>inquisitive; insightful; analytical</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="cv">
-                <div class="grid-item item-3">
-                    <div class="internal-text skills">
-                        <div></div>
-                        <div class="body-text">
-                            <h1>experience.</h1>
-                        </div>
-                        <div class="title-text">
-                            <h3>costar group</h3>
-                            <h5>june 2021-august 2021</h5>
-                        </div>
-                        <div class="body-text">
-                            <ul>
-                                <li>wrote <b>C# endpoints</b> for contract upload and download; secured using <b>Json Web Token</b></li><br>
-                                <li>built a <b>responsive UI</b> using <b>Angular/C#</b> to test previous tokenization <b>API</b></li><br>
-                                <li>built an <b>Angular/C#</b> utility using <b>Adobe Sign API</b> to display info for <b>10,000+</b> users. created an injectable singeton service to maintain hydration of <b>OAuth</b> access token</li>
-                            </ul>
-                        </div>
-                        <div class="title-text">
-                            <h3>jewish federation of princeton mercer bucks</h3>
-                            <h5>july 2019-june 2021</h5>
-                        </div>
-                        <div class="body-text">
-                            <ul>
-                                <li>wrote <b>Java</b> programs to help manage clientele database of <b>800+</b></li><br>
-                                <li>consolidated and pruned data from <b>Blackbaud eTapestry</b> reports</li><br>
-                                <li>implemented <b>Apache POI</b> Library to generate excel spreadsheets</li>
-                            </ul>
-                        </div>
-                        <div class="title-text">
-                            <h3>roundview capital</h3>
-                            <h5>summers 2016 and 2018</h5>
-                        </div>
-                        <div class="body-text">
-                            <ul>
-                                <li>built a leveraged buyout calculator application in <b>Java</b> for company clientele</li><br>
-                                <li>compiled stock data from <b>Bloomberg</b>, <b>IEX</b>, and <b>Alpha Vantage</b></li><br>
-                                <li>implemented multivariate regressions in <b>Python</b> using <b>scipy</b> and <b>statsmodels</b> libraries</li>
-                            </ul>
-                        </div>
-                        <div class="title-text">
-                            <h3>eagle scout</h3>
-                            <h5>august 2019</h5>
-                        </div>
-                        <div class="body-text">
-                            <p>
-                                <b>led team</b> of scouts and adults and <b>cooperated with</b> local government to create and mark trails, sign and bench for Eagle Scout project
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="socials">
-                <div class="grid-item item-4">
-                    <div class="icons">
-                        <div class="icon linkedin">
-                            <a href="https://linkedin.com/in/ariqbailey" target="_blank" id="">
-                                <img src="assets/icons/svg/linkedin.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon github">
-                            <a href="https://github.com/ariqbailey" target="_blank" id="">
-                                <img src="assets/icons/svg/github.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon strava">
-                            <a href="https://www.strava.com/athletes/42595636" target="_blank" id="">
-                                <img src="assets/icons/svg/strava.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon goodreads">
-                            <a href="https://www.goodreads.com/user/show/131060650-ari-bailey" target="_blank" id="">
-                                <img src="assets/icons/svg/goodreads.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon instagram">
-                            <a href="https://www.instagram.com/ariqbailey_/" target="_blank" id="">
-                                <img src="assets/icons/svg/instagram.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
-            <footer>
-                <div class="grid-item item-5">
-                    <h3>&#169; Ari Quartner Bailey 2021 | Coded by hand and hosted on my Raspberry Pi</h3>
+            <footer class="py-4">
+                <div class="row text-center">
+                    <p class="fs-5 text-white">&#169; Ari Quartner Bailey 2021 | Coded by hand and hosted on my Raspberry Pi</p>
                 </div>
             </footer>
-
-        </div> -->
+        </div>
 
         <!-- bootstrap js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
