@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse justify-content-between" id="toggleMobileMenu">
                 <ul></ul>
                 <ul class="navbar-nav text-center">
-                    <li class="py-2"><a class="px-5 fs-5" href="#about" >about</a></li>
-                    <li class="py-2"><a class="px-5 fs-5" href="#skills" >skills</a></li>
-                    <li class="py-2"><a class="px-5 fs-5" href="#cv" >experience</a></li>
-                    <li class="py-2"><a class="px-5 fs-5" href="#socials" >socials</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#about" onclick="collapseNavbar()">about</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#skills" onclick="collapseNavbar()">skills</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#cv" onclick="collapseNavbar()">experience</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#socials" onclick="collapseNavbar()">socials</a></li>
                 </ul>
                 <ul class="navbar-nav text-center download-resume">
                     <li class="py-2 fs-5 justify-content-md-center text-center">
@@ -194,6 +194,11 @@
 
         <!-- bootstrap js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            const collapseNavbar = () => {
+                document.getElementById("toggleMobileMenu").className = 'navbar-collapse justify-content-between collapse hide';
+            }
+        </script>
     </body>
 </html>
 
