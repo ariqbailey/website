@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> -->
+        <link rel="stylesheet" href="new/main.css">
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Ari Bailey</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-custom sticky-top navbar-expand-lg navbar-dark p-2">
+            <a href="#" class="navbar-brand fs-4">ari q bailey</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="toggleMobileMenu">
+                <ul></ul>
+                <ul class="navbar-nav text-center">
+                    <li class="py-2"><a class="px-5 fs-5" href="#about" onclick="collapseNavbar()">about</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#skills" onclick="collapseNavbar()">skills</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#cv" onclick="collapseNavbar()">experience</a></li>
+                    <li class="py-2"><a class="px-5 fs-5" href="#socials" onclick="collapseNavbar()">socials</a></li>
+                </ul>
+                <ul class="navbar-nav text-center download-resume">
+                    <li class="py-2 fs-5 justify-content-md-center text-center">
+                        <a class="download-resume p-2 border border-3 border-white text-center" href="assets/Resume College 2021.pdf" download>
+                            download resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <section id="about" class="row py-5">
+                <div class="col-md-auto text-center">
+                    <div class="d-inline-flex">
+                        <img src="assets/portrait-sep-2019-2.jpg" class="img-fluid img-max border border-3">
+                    </div>
+                </div>
+                <div class="col pt-2 align-self-center">
+                    <h1 class="">about me.</h1>
+                    <p class="lead fs-4">I built my first computer at eleven. Now, I'm a junior studying at the Univeristy of Maryland. Honors computer science student minoring in cybersecurity. Eagle scout, runner and reader.</p>
+                    <p class="lead fs-4"><a href="mailto:ariqbailey@me.com" id="">ariqbailey@me.com</a> | D.C. area | phone # in <a href="assets/Resume College 2021.pdf" download>resume</a></p>
+                </div>
+            </section>
+            <section id="skills" class="py-5">
+                <div class="row py-3 pb-0">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <h2>skills.</h2>
+                    </div>
+                </div>
+                <div class="row py-3 pt-1">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">computer</h4>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0">
+                            java, python, c# | vscode, visual studio, eclipse, jupyter
+                        </p>
+            
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">relevant classes</h4>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0">object-oriented programming, discrete structures, computer systems, advanced programming languages, algorithms, applied probability and statistics, linear algebra, computer and network security, data science</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">me</h4>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0">inquisitive; insightful; analytical</p>
+                    </div>
+                </div>
+            </section>
+            <section id="cv" class="py-5">
+                <div class="row py-3 pb-0">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <h2>experience.</h2>
+                    </div>
+                </div>
+                <div class="row py-3 pt-1">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">costar group</h4>
+                        <h6 class="text-start text-md-end">june 2021-august 2021</h6>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">wrote <b>C# endpoints</b> for contract upload and download; secured using <b>Json Web Token</b></p>
+                        <p class="fs-5 m-0 py-1">built a <b>responsive UI</b> using <b>Angular/C#</b> to test previous tokenization <b>API</b></p>
+                        <p class="fs-5 m-0 py-1">built an <b>Angular/C#</b> utility using <b>Adobe Sign API</b> to display info for <b>10,000+</b> users</p>
+                        <p class="fs-5 m-0 py-1">created an injectable singeton service to maintain hydration of <b>OAuth</b> access token</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">jewish federation of princeton mercer bucks</h4>
+                        <h6 class="text-start text-md-end">july 2019-june 2021</h6>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">wrote <b>Java</b> programs to help manage clientele database of <b>800+</b></p>
+                        <p class="fs-5 m-0 py-1">consolidated and pruned data from <b>Blackbaud eTapestry</b> reports</p>
+                        <p class="fs-5 m-0 py-1">implemented <b>Apache POI</b> Library to generate excel spreadsheets</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">roundview capital</h4>
+                        <h6 class="text-start text-md-end">summers 2016 and 2018</h6>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1">built a leveraged buyout calculator application in <b>Java</b> for company clientele</p>
+                        <p class="fs-5 m-0 py-1">compiled stock data from <b>Bloomberg</b>, <b>IEX</b>, and <b>Alpha Vantage</b></p>
+                        <p class="fs-5 m-0 py-1">implemented multivariate regressions in <b>Python</b> using <b>scipy</b> and <b>statsmodels</b> libraries</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-3 align-self-center">
+                        <h4 class="text-start text-md-end">eagle scout</h4>
+                        <h6 class="text-start text-md-end">august 2019</h6>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <p class="fs-5 m-0 py-1"><b>led team</b> of scouts and adults and <b>cooperated with</b> local government to create and mark trails, sign and bench for Eagle Scout project</p>
+                    </div>
+                </div>
+            </section>
+            <section id="socials" class="container-md py-5">
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://linkedin.com/in/ariqbailey" target="_blank" id="">
+                            <img src="assets/icons/svg/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/ariqbailey" target="_blank" id="">
+                            <img src="assets/icons/svg/github.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.strava.com/athletes/42595636" target="_blank" id="">
+                            <img src="assets/icons/svg/strava.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.goodreads.com/user/show/131060650-ari-bailey" target="_blank" id="">
+                            <img src="assets/icons/svg/goodreads.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/ariqbailey_/" target="_blank" id="">
+                            <img src="assets/icons/svg/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+            </section>
+
+            <footer class="pt-5 pb-3">
+                <div class="row text-center">
+                    <p class="fs-5 text-white">&#169; Ari Quartner Bailey 2021 | Coded by hand and hosted on my Raspberry Pi</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            const collapseNavbar = () => {
+                document.getElementById("toggleMobileMenu").className = 'navbar-collapse justify-content-between collapse hide';
+            }
+        </script>
+    </body>
+</html>
+
+
