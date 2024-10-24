@@ -90,6 +90,10 @@ nav {
     color: var(--main-text-accent) !important;
 }
 
+#downloadResume:hover {
+    border-color: var(--main-text-accent) !important;
+}
+
 .download-resume {
     flex-shrink: 0;
 }
