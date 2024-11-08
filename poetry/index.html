@@ -355,7 +355,7 @@ your life is only beginning
                     collapseNavbar();
                     setTimeout(() => {
                         scrollToTop();
-                    }, 10); // Prevents race condition
+                    }, 0); // Prevents race condition
                 }
 
                 const hidePoem = (number) => {
@@ -364,8 +364,8 @@ your life is only beginning
 
                 const scrollToTop = () => {
                     window.scrollTo({
-                        top: 0,
-                        // behavior: "smooth"
+                        top: 50,
+                        behavior: "instant"
                     });
                 }
             </script>
